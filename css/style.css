@@ -1,0 +1,248 @@
+/*----- Body -----*/
+
+body {
+  background-image: url(../img/bg_xs_top.jpg), url(../img/bg_xs_right.jpg), url(../img/bg_xs_left.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top left, 100% 29%, 0% 97%;
+  color: #4f5256;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.font_reg {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.font_med {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+h2, h3, h4, h5, h6{
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+h4{
+  font-size: 1.3rem;
+}
+
+h5{
+  font-size: 1.2rem;
+}
+
+p {
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.color{
+  color: #670266;
+  font-weight: 600;
+}
+
+.padding-bot {
+  padding-bottom: 15vh;
+}
+
+.container-fluid {
+  margin-top: 15vh;
+}
+
+.bg_container{
+  background-color: #55575808;
+}
+
+
+/*----- Nav -----*/
+
+.navbar-nav {
+  padding-right: 70px;
+}
+
+/*----- Description -----*/
+
+.img-thumbnail {
+  border: 2px solid #670266;
+}
+
+.p_descr{
+  font-size: x-large;
+}
+
+/*----- marge et padding -----*/
+
+.margin_bot {
+  margin-bottom: 7vh;
+}
+
+/*----- Formation -----*/
+
+.card {
+  position: relative;
+  color: #4f5256;
+  border: none;
+  margin-bottom: 16px;
+}
+.card-header {
+  padding: 16px;
+  margin: 0px;
+}
+.card-body {
+  position: relative;
+  padding: 16px;
+}
+
+.gaadiex-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.gaadiex-list > .gaadiex-list-item {
+  padding: 0 22px;
+}
+.gaadiex-list-item-img {
+  float: left;
+
+  height: 58px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  margin-right: 20px;
+}
+.gaadiex-list-item i {
+  float: left;
+  font-size: 48px;
+  width: 58px;
+  height: 58px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  margin-right: 20px;
+}
+
+/*----- Competence -----*/
+
+
+.progress {
+  padding: 0;
+}
+.progress-bar {
+  background-color: #5e116f;
+}
+.bg_soft {
+  background-color: #44527563;
+}
+
+/*----- Experience -----*/
+
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #5e116f;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+/*---------------Footer--------------*/
+
+footer {
+  background-color: #495057;
+  margin: auto;
+}
+
+.button_foot {
+  text-align: center;
+  padding-top: 30px;
+}
+.button_foot a {
+  color: #f6f6f6;
+  text-decoration: none;
+  font-size: 50px;
+  margin-right: 10px;
+}
+.button_foot a i {
+  transition: 1s ease;
+}
+
+.button_foot a:hover {
+  color: #f6f6f6;
+  transition: 1s ease;
+}
+.button_foot a:hover i {
+  transform: scale(1.2);
+}
+
+/*----- MediaQuerie -----*/
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../img/bg_m_top.jpg), url(../img/bg_m_right.jpg), url(../img/bg_xs_left.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top left, 100% 33%, 0% 97%;
+  }
+
+  .bg_container{
+    background-color: #55575814;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    background-image: url(../img/bg_l_top.jpg),
+      url(../img/bg_l_right.jpg),
+      url(../img/bg_m_left.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top left, 100% 35%, 0% 95%;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+  }
+}
+@media screen and (min-width: 1500px){
+  body{
+    background-image: url(../img/bg_l_top.jpg),
+      url(../img/bg_l_right.jpg),
+      url(../img/bg_l_left.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top left, 100% 35%, 0% 92%;
+  }
+  
+  .container {
+      max-width: 75%;
+  }
+}
